@@ -1,0 +1,613 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	
+	<head>
+		<title>Levi Breedlove: Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+		<script>
+         // Kick-start the first spotlight as soon as everything is ready.
+          window.addEventListener('load', () => {
+          const firstSpotlight = document.querySelector('.spotlights > section');
+          if (firstSpotlight) {
+          // drop the "inactive" class AFTER a tiny delay so the CSS transition plays
+          setTimeout(() => firstSpotlight.classList.remove('inactive'), 50);}});
+        </script>
+	</head>
+     
+	<body class="is-preload">
+
+
+		<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+					<nav aria-label="Site navigation">
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Tech Stack</a></li>
+							<li><a href="#four">ACI Projects</a></li>
+              <li><a href="#three">My Journey</a></li>
+           <!-- <li><a href="#two">Certs & Achievements</a></li> -->
+							<li><a href="#five">Get in touch</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+                  <!--   2) Video tag -->
+                       <video class="background-media" autoplay muted loop playsinline
+                              src="assets/css/videos/intro.mp4" onloadedmetadata="this.playbackRate = 1">
+                       </video>
+             
+	                <!--   Intro-->
+						<div class="inner">
+  <h1>Hello, I'm Levi!</h1>
+  <p>
+    Cloud Computing Enthusiast | Aspiring AWS Cloud Developer<br>
+    Pursuing Hands-On Training at the
+    <a href="https://aws.amazon.com/training/aws-cloud-institute/">AWS Cloud Institute</a>
+  </p>
+
+  <!-- Wrap counters in a flexbox container -->
+  <div class="counters">
+    <div class="counter-box">
+      <span class="counter-wrapper">
+        <span class="counter" data-target="6">0</span>
+        <span class="plus-icon">+</span>
+      </span>
+      <p>PROJECTS</p>
+    </div>
+   
+	<div class="counter-box">
+      <span class="counter-wrapper">
+        <span class="counter" data-target="1">0</span>
+        <span class="plus-icon">+</span>
+      </span>
+      <p>IN-PROGRESS</p>
+    </div>
+
+    <div class="counter-box">
+      <span class="counter-wrapper">
+        <span class="counter" data-target="3">0</span>
+        <span class="plus-icon">+</span>
+      </span>
+      <p>CERTIFICATIONS</p>
+    </div>
+  </div>
+</div>
+                    
+					</section>
+					<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+  <div class="content">
+    <div class="inner">
+      <h2>Tech Stack</h2>
+      <div class="skills-flex">
+        
+        <!-- First Skill Table -->
+        <div class="skill-table">
+          <h3>Core Programming & Markup Languages</h3>
+          <table>
+            <thead>
+              <tr><th>Category</th><th>Skills Learned</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Front-End</td><td>HTML, CSS, JavaScript</td></tr>
+              <tr><td>Back-End</td><td>Python, SQL, Bash</td></tr>
+              <tr><td>Templating</td><td>YAML, JSON, Django Templates</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Second Skill Table -->
+        <div class="skill-table">
+          <h3>AWS Services by Domain</h3>
+          <table>
+            <thead>
+              <tr><th>Domain</th><th>Services / Tools</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Compute</td><td>AWS Lambda, EC2</td></tr>
+              <tr><td>Storage</td><td>S3, EBS, EFS</td></tr>
+              <tr><td>Database</td><td>DynamoDB, RDS</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+				<!-- Four -->
+					<section id="four"> <div class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>AWS Cloud Institute Projects</h2>
+							<!-- <p>Below are some of the key projects I completed during my training at the AWS Cloud Institute. 
+                 Each project showcases my ability to design, deploy, and manage cloud-native applications using AWS services.
+									</p> -->
+
+							  <!-- ✨ NEW: responsive project cards  -->
+	
+    <div class="project-grid">
+
+      <!-- Card 1 -->
+      <article class="project-card">
+        <img src="assets/css/images/petclub.png"
+             alt="Screenshot of Cloud-Native Pet Club Portal">
+        <div class="body">
+          <h3>Cloud-Native Pet Club Portal</h3>
+          <p class="meta">Finished <time>2025-05</time></p>
+          <p class="desc">
+            Full-stack Django application that manages pet breeds, vaccination records, users, 
+			and image galleries, running on AWS with a secure admin and CI-ready infrastructure.
+          </p>
+          <a href="pet-club.html" class="button small read-more">
+			Read More
+		</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="project-card">
+        <img src="assets/css/images/customer-registry.png"
+             alt="Screenshot of Serverless Customer Registry">
+        <div class="body">
+          <h3>Serverless Customer Registry</h3>
+          <p class="meta">Finished <time>2025-05</time></p>
+          <p class="desc">
+            Deployed a fully serverless CRUD stack with a static frontend on S3, 
+			API Gateway endpoints triggering Lambda functions, and DynamoDB for data persistence.
+          </p>
+          <a href="#" class="button small read-more">
+			Read More
+		</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="project-card">
+        <img src="assets/css/images/bike-shop.png"
+             alt="Screenshot of AnyCompany Bicycle Shop">
+        <div class="body">
+          <h3>Cloud-Native Bicycle Shop Catalog</h3>
+          <p class="meta">Finished <time>2025-05</time></p>
+          <p class="desc">
+           A re-platformed Django product catalog migrated with a resilient AWS stack using Elastic Beanstalk, 
+		   RDS, and S3, high availability, and secure asset delivery.
+          </p>
+          <a href="#" class="button small read-more">
+			Read More
+		</a>
+        </div>
+      </article>
+      
+	  <!-- Card 4 -->
+     <article class="project-card">
+        <img src="assets/css/images/kyc-app.png"
+             alt="Screenshot of Know Your Customer Onboarding Application">
+        <div class="body">
+          <h3>Customer Onboarding Application</h3>
+          <p class="meta">Finished <time>2025-05</time> &bull; Capstone</p>
+          <p class="desc">
+           Serverless pipeline which ingests customer documents, runs AI-driven ID checks with AWS Textract + Rekognition, 
+		   logs results, and uses API Gateway for 3rd party usage — all deployed with AWS SAM.
+          </p>
+          <a href="#" class="button small read-more">
+			Read More
+		</a>
+        </div>
+      </article>
+
+	  <!-- Card 5 -->
+     <article class="project-card">
+        <img src="assets/css/images/bird-lens.png"
+             alt="Screenshot of BirdLens Serverless Bird-ID">
+        <div class="body">
+          <h3>BirdLens Serverless Bird-ID</h3>
+          <p class="meta">In Progress <time>2025-05</time></p>
+          <p class="desc">
+            Powered by AWS AI & Data Services to instantly identify birds from images or audio 
+			and return rich, searchable species details to users worldwide.
+          </p>
+          <a href="#" class="button small read-more">
+			Read More
+		</a>
+        </div>
+      </article>
+
+	  <!-- Card 6 -->
+	   <article class="project-card">
+        <img src="assets/css/images/trivia-game.png"
+             alt="Screenshot of Trivia-Game-Serverless-Step-Functions">
+        <div class="body">
+          <h3>Trivia Game Orchestration</h3>
+          <p class="meta">Finished <time>2025-06</time></p>
+          <p class="desc">
+            Designed a serverless backend using AWS Step Functions to coordinate Lambda functions for 
+			question flow, scoring, and state logic with wait, choice, and looping paths.
+          </p>
+          <a href="#" class="button small read-more">
+			Read More
+		</a>
+        </div>
+      </article>
+
+      <!-- Card 7 -->
+	  <article class="project-card">
+        <img src="assets/css/images/aws-sam.png"
+             alt="Screenshot of AWS Serverless Application Model">
+        <div class="body">
+          <h3>AWS Serverless Application Model</h3>
+          <p class="meta">Finished <time>2025-06</time></p>
+          <p class="desc">
+           Deployed a serverless application using AWS SAM,
+           automating Lambda, API Gateway, and DynamoDB setup,
+           running guided deployments and testing the live stack,
+           then pushing updates through version-controlled changes.
+          </p>
+          <a href="#" class="button small read-more">
+			Read More
+		</a>
+        </div>
+      </article>
+      <!-- …duplicate <article> blocks for the rest of your projects …-->
+    </div><!-- /.project-grid -->
+</div><!-- /.inner -->
+</section><!-- /#four -->
+
+<div class="wrapper style2 spotlights">
+  <section id="three" class="about-me">
+							<a href="#" class="image no-link">
+								<img src="images/pic03.png" alt="Photo of me" data-position="center">
+							</a>
+							
+							<div class="content">
+								<div class="inner">
+									<h2>AWS Cloud Institute Journey</h2>
+									<p>Learn how I tackled the AWS Cloud Institute—and mastered its core fundamentals: cloud architecture, serverless & container patterns, IaC, AI/ML integration and security best practices.
+                                       <!-- This immersive journey equipped me with the practical skills to design, deploy and operate scalable, secure, cost-optimized solutions on AWS. -->
+									</p>
+                   <div class="cert-section-wrapper">
+                                    <div class="cert-grid" id="certGrid">
+
+                                      <!-- always‐visible cards -->
+                                      <div class="cert-card"><img src="assets/css/images/cloud-practitioner.png" alt="AWS Certified Cloud Practitioner">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Certified Cloud Practitioner</div>
+                                        <div class="cert-sub">December 2024</div>
+                                        <div class="cert-desc"></div>
+                                       </div>
+
+                                       <button class="button toggle-desc">View More</button>
+
+                                   </div>                                 
+					
+                                      <div class="cert-card">
+                                        <img src="assets/css/images/ai-practitioner.png" alt="AWS Certified AI Practitioner">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Certified AI Practitioner</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc"></div>
+                                       </div>
+
+                                       <button class="button toggle-desc">View More</button>
+
+                                   </div> 
+
+									                   <div class="cert-card">
+                                        <img src="assets/css/images/developer-associate.png" alt="AWS Certified Developer Associate">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Certified Developer Associate</div>
+                                        <div class="cert-sub">April 2024 </div>
+                                        <div class="cert-desc"></div>
+                                       </div>
+
+                                       <button class="button toggle-desc">View More</button>
+
+                                   </div> 
+
+                                   <div class="cert-card">
+                                        <img src="assets/css/images/aci-grad.png" alt="AWS Cloud Institute Graduate">
+                                        <div class="cert-content">
+                                        <div class="cert-title">Cloud Application Developer Graduate</div>
+                                        <div class="cert-sub">April 2024 </div>
+                                        <div class="cert-desc"></div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                   </div>
+                  
+                                   <!-- hidden until expand -->
+                                <!--  <div class="cert-card ">
+                                        <img src="assets/css/images/cloud-essentials.png" alt="AWS Knowledge: Cloud Essentials">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Knowledge: Cloud Essentials</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div> -->
+                                  
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-practitioner.png" alt="AWS Cloud Quest: Cloud Practitioner">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Cloud Practitioner</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-solutions.png" alt="AWS Cloud Quest: Solutions Architect">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Solutions Architect</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-serverless.png" alt="AWS Cloud Quest: Severless Developer">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Severless Developer</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-data.png" alt="AWS Cloud Quest: Data Analytics">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Data Analytics</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-networking.png" alt="AWS Cloud Quest: Networking">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Networking </div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-security.png" alt="AWS Cloud Quest: Security">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Security</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-machine.png" alt="AWS Cloud Quest: Machine Learning">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Machine Learning</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+
+                                  <div class="cert-card ">
+                                        <img src="assets/css/images/cq-ai.png" alt="AWS Cloud Quest: Generative AI">
+                                        <div class="cert-content">
+                                        <div class="cert-title">AWS Cloud Quest: Generative AI</div>
+                                        <div class="cert-sub">April 2024</div>
+                                        <div class="cert-desc">
+                                        </div>
+                                       </div>
+                                       <button class="button toggle-desc">View More</button>
+                                  </div>
+									
+								</div>
+							</div>
+               <ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+						</section>
+<!-- Two -->
+						<section id="two">
+						<!--	<a href="#" class="image no-link"><img src="images/pic02.jpg" alt="" data-position="center"></a> >-->
+							<div class="content">
+								<div class="inner">
+                                 
+									                
+
+                                   
+
+      <!-- Expand Arrow stays at end-->
+     <!--  <div class="expand-arrow">
+  <a
+    id="toggleCerts"
+    href="https://www.credly.com/users/levi-breedlove/edit#credly"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="arrow-icon"
+  >
+     Verify On Credly 
+  </a>
+</div> -->
+    
+  
+</section>
+</div>
+				<!-- Five -->
+					<div id="five" class="wrapper style1 fade-up">
+						<div class="inner">
+                             <h2>Contact Me</h2>
+                             <p></p>
+                             
+							 
+							<div class="contact-container" style=" margin-top: 20px;">
+								<div class="split style1">
+									<div>
+										<form method="post" action="https://formspree.io/f/your-form-id">
+											<div class="fields">
+												<div class="field half">
+													<label for="name">Name</label>
+													<input type="text" name="name" id="name" required>
+												</div>
+												<div class="field half">
+													<label for="email">Email</label>
+													<input type="email" name="email" id="email" required>
+												</div>
+												<div class="field">
+													<label for="message">Message</label>
+													<textarea name="message" id="message" rows="5" required></textarea>
+												</div>
+											</div>
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="button submit"></li>
+											</ul>
+										</form>
+									</div>
+									<section>
+										<ul class="contact">
+									        
+											<li>
+												<h3>Email</h3>
+												<a href="#">user@untitled.tld</a>
+											</li>
+										
+											<li>
+												<h3>Social</h3>
+												<ul class="icons social-icons">
+													<li>
+														<a href="#" target="_blank">
+															<img src="images/icons/linkedin.png" alt="LinkedIn" style="width:52px;height:52px;vertical-align:middle;">
+															<span class="label" style="display:none;">LinkedIn</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" target="_blank">
+															<img src="images/icons/github.png" alt="GitHub" style="width:55px;height:52px;vertical-align:middle;">
+															<span class="label" style="display:none;">GitHub</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" target="_blank">
+															<img src="images/icons/credly.png" alt="Credly" style="width:52px;height:52px;vertical-align:middle;">
+															<span class="label" style="display:none;">Credily</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            
+				
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Amazon Web Services | Levi Breedlove | All Rights Reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+  // Wait until everything on the page (images, fonts, etc.) is loaded …
+  window.addEventListener('load', () => {
+    // … then wait an extra 2000 ms
+    setTimeout(() => {
+
+      const counters = document.querySelectorAll('.counter');
+
+      counters.forEach(counter => {
+        counter.innerText = '0';
+        const plusIcon = counter.nextElementSibling; // + icon
+
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count   = +counter.innerText;
+
+          if (count < target) {
+            counter.innerText = count + 1;
+
+            // flash the +
+            plusIcon.classList.add('flash');
+            setTimeout(() => plusIcon.classList.remove('flash'), 400);
+
+            setTimeout(updateCount, 200); // next tick
+          } else {
+            counter.innerText = target;   // lock final number
+          }
+        };
+
+        updateCount();   // start this counter after the delay
+      });
+
+    }, 500); // 1 000 ms = 1 s
+  });
+</script>
+
+
+ <script>
+  document.getElementById("toggleCerts").addEventListener("click", () => {
+    const grid = document.getElementById("certGrid");
+    const arrow = document.getElementById("toggleCerts");
+    grid.classList.toggle("expanded");
+    arrow.classList.toggle("rotated");
+  });
+</script> 
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.toggle-desc');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.cert-card');
+        card.classList.toggle('expanded');
+
+        // Toggle button text
+        const expanded = card.classList.contains('expanded');
+        button.textContent = expanded ? 'View Less' : 'View More';
+      });
+    });
+  });
+</script> 
+
+
+	</body>
+</html>
